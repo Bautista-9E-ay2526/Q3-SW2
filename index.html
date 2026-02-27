@@ -33,27 +33,20 @@
         <div class="container mt-5 ml-5" id="look">
             <h2>Looking for High End and Budget Gadgets?</h2>
             <p class="text-muted">Enter what you're looking for and the right one will appear!</p>
-            <input type="number" id="budget" class="form-control w-50" placeholder="Enter Budget"></input>
+            <input type="number" id="budget" class="form-control w-50 mx-auto" placeholder="Enter Budget"></input>
             
             <!-- BUTTONS -->
             <div class="discountButtons">
-                <button class="btn btn-primary mt-4" id="boton 1">Brand & Discount</button>
-                <button class="btn btn-primary mt-4" id="boton 1">Store Locations</button>
+                <button class="btn btn-primary mt-4" id="boton 1" onclick="displayDcount()">Brand & Discount</button>
+                    <div id="dcounts_box"></div>
+                <button class="btn btn-primary mt-4" id="boton 2" onclick="displayLoc()">Store Locations</button>
+                    <div id="storeLocs"></div>
                 <button type="button" class="btn btn-danger mt-4" onclick="window.location.reload()">Refresh Page</button>
             </div>
 
-        
         </div>
 
-            <div class="container bg-secondary">
-                <h4> Recommended Brands </h4>
-
-                <button class="btn btn-primary mt-3"> Acer </button>
-                <button class="btn btn-primary mt-3"> Apple </button>
-                <button class="btn btn-primary mt-3"> Lenovo </button>
-
-                <p class="text-muted">Elligible discount:<span class="bg-danger"> </span></p>
-            </div>
+            
     </main>
     <!-- END OF MAIN -->
 
@@ -64,4 +57,5 @@
     <script src="main.js"></script>
 
 </body>
+</html>
 </html>
